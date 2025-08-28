@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { Leaf, LineChart, Users, FileText, GitBranch, Home } from "lucide-react";
+import { Leaf, Users, FileText, GitBranch, Home, Mail } from "lucide-react";
 
 const links = [
   { href: "/", label: "Главная", icon: Home },
   { href: "/product", label: "Продукт", icon: Leaf },
   { href: "/docs", label: "Техническая документация", icon: FileText },
   { href: "/team", label: "Команда", icon: Users },
-  { href: "/investors", label: "Инвесторам", icon: LineChart },
+  { href: "/contacts", label: "Контакты", icon: Mail },
   { href: "/roadmap", label: "Дорожная карта", icon: GitBranch },
 ];
 
@@ -31,7 +31,13 @@ export default function Navbar() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <Link href="/investors" className="btn">Инвесторам</Link>
+          <Link
+            href="/#support"
+            aria-label="Поддержать проект"
+            className="inline-flex items-center justify-center rounded-xl px-5 py-3 font-medium bg-black text-white hover:opacity-90"
+          >
+            Поддержать проект
+          </Link>
         </div>
       </div>
       <div className="md:hidden px-3 pb-3 flex gap-2 overflow-x-auto">

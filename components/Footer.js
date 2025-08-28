@@ -8,14 +8,31 @@ export default function Footer(){
         </div>
         <div>
           <div className="font-semibold mb-2">Контакты</div>
-          <p>hello@smartfarm.ai</p>
+          <div className="space-y-1">
+            <a href="mailto:hello@smartfarm.ai" className="underline">hello@smartfarm.ai</a>
+            <a href="/contacts" className="underline">Форма обратной связи</a>
+          </div>
         </div>
         <div className="space-y-2">
           <div className="font-semibold">Материалы</div>
-          <div className="flex gap-2">
-            <a className="btn secondary" href="#">One-pager PDF</a>
-            <a className="btn secondary" href="#">Pitch Deck</a>
-          </div>
+          <ul className="space-y-2">
+            <li>
+              <a
+                href="#"
+                className="inline-flex items-center justify-center rounded-xl px-5 py-3 font-medium border border-gray-200 hover:bg-gray-50"
+              >
+                One-pager PDF
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="inline-flex items-center justify-center rounded-xl px-5 py-3 font-medium border border-gray-200 hover:bg-gray-50"
+              >
+                Pitch Deck
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
